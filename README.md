@@ -5,10 +5,7 @@
 import tweepy
 import numpy as np
 import pandas as pd
-from datetime import datetime
 import matplotlib.pyplot as plt
-from matplotlib import style
-style.use('ggplot')
 
 # Import and Initialize Sentiment Analyzer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -825,7 +822,7 @@ bar_bbc,bar_cbs,bar_cnn,bar_fox,bar_nyt = plt.bar(np.arange(0, 5), [mean_grouby[
                                                                     mean_grouby["@CBS"],
                                                                     mean_grouby["@CNN"],
                                                                     mean_grouby["@FoxNews"],
-                                                                    mean_grouby["@nytimes"]], width=1, linewidth=1)
+                                                                    mean_grouby["@nytimes"]], width=1)
 # set bar color
 bar_bbc.set_color("lightseagreen")
 bar_cbs.set_color("darkorange")
